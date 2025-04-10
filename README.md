@@ -10,6 +10,8 @@ A web application that integrates machine learning in order to predict future ma
 
 # Usage #
 
+[Click Here](https://ai-market-predictor-app.onrender.com) to access the live website and to access its functionality.
+
 
 
 # Technologies Used #
