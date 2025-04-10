@@ -4,7 +4,7 @@ A web application that integrates machine learning in order to predict future ma
 
 # Description and Features #
 
-- The model is trained with historical price data of the chosen symbol for more accurate and precise predictions based on past raw price patterns. The historical price data is also regularly updated due to utilizing 'yfinance' to gather real time and updated price data, which ensures models accuracy.
+- The model is trained with historical price data of the chosen symbol for more accurate and precise predictions based on past raw price patterns. The historical price data is also regularly updated due to utilizing **yfinance** to gather real time and updated price data, which ensures models accuracy.
 - The model is composed of an encoder-decoder build for a more accurate and effective approach to unsupervised pattern recognition.
 - Provides predictions based on either a monthly or yearly time interval.
 
