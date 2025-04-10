@@ -1,0 +1,6 @@
+Tensorflow==2.16.2
+Flask==3.1.0
+Pandas
+Numpy
+yfinance==0.2.55
+gunicorn
