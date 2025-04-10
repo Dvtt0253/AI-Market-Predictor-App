@@ -26,7 +26,7 @@ This project is licensed under the All Rights Reserved License.
 
 You are permitted to access the functionality of the web application freely. However, you may not copy, distribute, modify, or repurpose the code or assets for commercial use, without explicit permission from the author.
 
-See the [License](./LICENSE.txt) for further details.
+See the [License](./Market_app/LICENSE.txt) for further details.
 
 # Copyright #
 
