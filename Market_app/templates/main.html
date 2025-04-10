@@ -1,0 +1,45 @@
+<!-- Copyright (c) 2025 Joie Harvey. All rights reserved. -->
+<!-- This code may not be used, modified, or distributed without permission. -->
+<!-- License: All Rights Reserved -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form class="form-div"action="/input" method="POST">
+
+            <h1 class="title">AI Price and Trend Prediction</h1>
+            <a href="static/files/symbols.txt">
+                <h5 class="symbols-list">Click here to view a list of common symbols and their correct formats</h5>
+            </a>
+        <div class="symbols-form">
+            <label class="symbols-label" for="symbol">Symbol: </label>
+            <input class="symbols-input" id="symbol" type="text" name="symbol" class="symbol" placeholder="write in format ex. 'EURUSD=X' " required>
+           
+             <label class="symbols-label" for="time_interval">Time Interval: </label>
+             <div class="radio-buttons">
+                <input  id="radio-1" type="radio" name="radio-option" value="1mo" required>
+                 <label  for="radio-1">Monthly Interval </label>
+                <input  id="radio-2" type="radio" name="radio-option" value="1d" required>
+                 <label  for="radio-2">Daily Interval</label>
+                <button class="symbols-button"type="submit">Predict</button>
+
+
+             </div>
+            
+
+        </div>
+            
+        </form>
+
+        
+
+        
+
+        
+    </body>
+</html>

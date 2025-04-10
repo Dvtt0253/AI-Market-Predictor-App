@@ -1,0 +1,111 @@
+/* 
+    Copyright (c) 2025 Joie Harvey. All rights reserved. 
+    This CSS may not be used, modified, or distributed without permission. 
+    License: All Rights Reserved
+*/
+
+
+body{
+    
+    width: 100vw;
+    height:100vh;
+    background-color: #d3d3d3;
+}
+.symbols-form{
+    display:block;
+    width:280px;
+    margin:auto;
+    margin-top:40px;
+    
+   
+
+
+    
+}
+.symbols-input{
+    display:block;
+    width:200px;
+    height:40px;
+    border-radius: 2px;
+    margin-bottom:20px;
+    margin-top:5px;
+    padding-left:5px;
+    padding-right:5px;
+}
+.form-div{
+    display:block;
+    width: 80vw;
+    height:60vh;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 20px;
+    margin-top:40px;
+    
+}
+.symbols-button{
+    display:block;
+    margin-top: 30px;
+    width:100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    font-weight: bold;
+}
+.symbols-label{
+    display:block;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+.radio-buttons{
+    display:block;
+    width:300px;
+    margin-top:5px;
+   
+}
+.title{
+    text-align: center;
+    letter-spacing: 1px;
+}
+.symbols-button:hover{
+    background-color: #e0e0e0;
+}
+.symbols-list{
+    text-align: center;
+    font-size: 15px;
+    color:#D32F2F;
+    letter-spacing: 0.5px;
+}
+a{
+    color:#D32F2F;
+}
+.market_info{
+    display:block;
+    width:80vw;
+    margin:auto;
+    height:60vh;
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-left:10px;
+    padding-right:10px;
+    text-align: center;
+
+}
+.prediction-title{
+    padding-bottom:40px;
+}
+.market-direction, .price-prediction{
+    display:block;
+    font-weight:bolder;
+    font-size: 19px;
+
+}
+.disclaimer{
+    display:block;
+    text-align: center;
+    color: #D32F2F;
+    padding-top: 45px;
+    overflow-wrap: break-word;
+}

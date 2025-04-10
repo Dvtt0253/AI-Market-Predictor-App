@@ -1,0 +1,76 @@
+Copyright (c) 2025 Joie Harvey. All rights reserved.
+This file may not be used, modified, or distributed without permission.
+License: All Rights Reserved
+
+
+Apple Inc.                  AAPL
+Google Inc.                 GOOG
+Microsoft Corporation       MSFT
+Tesla Inc.                  TSLA
+Amazon.com, Inc.            AMZN
+Meta Platforms, Inc.        META
+NVIDIA Corporation          NVDA
+Berkshire Hathaway Inc.     BRK-B
+The Walt Disney Company     DIS
+Coca-Cola Company           KO
+Euro/US Dollar              EURUSD=X
+Japanese Yen               JPY=X
+British Pound/US Dollar     GBPUSD=X
+Swiss Franc                 CHF=X
+Australian Dollar/US Dollar AUDUSD=X
+Canadian Dollar/US Dollar   CAD=X
+Singapore Dollar            SGD=X
+Euro/British Pound          EURGBP=X
+Euro/Japanese Yen           EURJPY=X
+Bitcoin/US Dollar           BTC-USD
+Ethereum/US Dollar          ETH-USD
+Litecoin/US Dollar          LTC-USD
+Dogecoin/US Dollar          DOGE-USD
+XRP/US Dollar               XRP-USD
+Cardano/US Dollar           ADA-USD
+Solana/US Dollar            SOL-USD
+Polkadot/US Dollar          DOT-USD
+Shiba Inu/US Dollar         SHIB-USD
+Chainlink/US Dollar         LINK-USD
+S&P 500 Index               SPY
+Vanguard Total Stock Market VTI
+Invesco QQQ Trust           QQQ
+ARK Innovation ETF          ARKK
+Russell 2000 Index ETF      IWM
+Vanguard Emerging Markets ETF VWO
+SPDR Gold Shares            GLD
+iShares MSCI Emerging Markets ETF EEM
+iShares MSCI All Country Asia ex-Japan ETF AAXJ
+Gold Futures                GC=F
+Crude Oil Futures           CL=F
+Silver Futures              SI=F
+Natural Gas Futures         NG=F
+Corn Futures                C=F
+Wheat Futures               W=F
+Copper Futures              HG=F
+Coffee Futures              KC=F
+Sugar Futures               SB=F
+Soybean Futures             S=F
+S&P 500 Index               ^GSPC
+Dow Jones Industrial Average ^DJI
+Nasdaq Composite Index      ^IXIC
+Russell 2000 Index          ^RUT
+FTSE 100 Index              ^FTSE
+DAX Index                   ^GDAXI
+Nikkei 225 Index            ^N225
+Hang Seng Index             ^HSI
+CAC 40 Index                ^FCHI
+10-Year Treasury Yield      ^TNX
+30-Year Treasury Yield      ^TYX
+5-Year Treasury Yield       ^FVX
+3-Month Treasury Yield      ^IRX
+iShares iBoxx $ Investment Grade Corporate Bond ETF LQD
+Vanguard 500 Index Fund VFIAX
+Fidelity Contrafund         FCNTX
+Vanguard Total Bond Market Index Fund BND
+Vanguard Emerging Markets Stock Fund VEMAX
+Apple Inc. Option (January 2023 $150 strike call) AAPL230120C00150000
+Tesla Inc. Option (April 2023 $900 strike put) TSLA230421P00900000
+Realty Income Corporation   O
+Vanguard Real Estate ETF    VNQ
+American Tower Corporation AMT

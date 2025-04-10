@@ -1,0 +1,8 @@
+Copyright (c) 2025 [Joie Harvey]
+
+All rights reserved.
+
+This project is provided for demonstration and functionality purposes only. 
+No part of this work may be reproduced, distributed, or used in any form without explicit permission from the author.
+
+For questions about special permissions, please contact Joie.Harvey1@gmail.com
