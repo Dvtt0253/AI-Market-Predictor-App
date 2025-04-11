@@ -8,6 +8,7 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.losses import MeanSquaredError 
 import numpy as np
 import csv
+from firewall_lib import flask_firewall
 print(f"Eager execution enabled: {tf.executing_eagerly()}")
 
 
@@ -20,6 +21,13 @@ print(f"Eager execution enabled: {tf.executing_eagerly()}")
 
 
 app = Flask (__name__)
+
+firewall = flask_firewall.Firewall(50,60)
+firewall.add_to_whitelist('127.0.0.1', "Localhost")
+
+firewall.startTempBlacklist_removal()
+firewall.startperiodic_check()
+
 
 
 
@@ -74,52 +82,81 @@ market_model.fit(price_ds, epochs=12)
 
 @app.route('/main', methods=['POST', 'GET'])
 def main():
+    is_blocked = firewall.block_access()
+    if is_blocked == 403:
+        return "Denied Access", 403
+    if firewall.rate_limiter() == 429:
+        return "Too Many Requests", 42
     return render_template('main.html')
 
 @app.route('/')
 def main_redirect():
+    is_blocked = firewall.block_access()
+    if is_blocked == 403:
+        return "Denied Access", 403
+    if firewall.rate_limiter() == 429:
+        return "Too Many Requests", 429
     return redirect(url_for('main'))
 
 @app.route('/result')
 def result():
+    is_blocked = firewall.block_access()
+    if is_blocked == 403:
+        return "Denied Access", 403
+    if firewall.rate_limiter() == 429:
+        return "Too Many Requests", 429
     return render_template('result.html')
 
 
 @app.route('/input', methods=['POST', 'GET'])
 def input():
+
+    is_blocked = firewall.block_access()
+    if is_blocked == 403:
+        return "Denied Access",403
+    if firewall.rate_limiter() == 429:
+        return "Too Many Requests", 429
+   
     global  symbol, interval
 
-    symbol = request.form['symbol']
-    interval = request.form['radio-option']
-    if interval == '1mo':
-        str_interval = 'month'
-    elif interval == '1d':
-        str_interval = 'day'
+    try:
+        symbol = firewall.santitize_input(request.form['symbol'])
+        if firewall.identify_payloads(symbol) == 403:
+            return "Malicious Activity Detected, Access permanently denied", 403
+        interval = request.form['radio-option']
+        if interval == '1mo':
+            str_interval = 'month'
+        elif interval == '1d':
+            str_interval = 'day'
 
+        
+        
+        current_market_data = yf.download(symbol,period='1y', interval=interval)
+        last_data = current_market_data.tail(1)
+        current_price = last_data['Close'].iloc[0].values[0]
+        print(current_price)
+        price_array = np.array([[current_price]])
+
+        model_prediction = market_model.predict(price_array[0])
+
+        if model_prediction > current_price:
+            direction = 'Upward'
+        elif model_prediction < current_price:
+            direction = 'Downward'
+        else:
+            direction = 'Stagnantly'
+
+
+
+
+
+
+
+        return render_template('result.html',price_prediction=model_prediction[0][0], market_direction=direction, symbol=symbol, interval=str_interval)
+    except Exception:
+        return redirect(url_for('main'))
     
-    
-    current_market_data = yf.download(symbol,period='1y', interval=interval)
-    last_data = current_market_data.tail(1)
-    current_price = last_data['Close'].iloc[0].values[0]
-    print(current_price)
-    price_array = np.array([[current_price]])
-
-    model_prediction = market_model.predict(price_array[0])
-
-    if model_prediction > current_price:
-        direction = 'Upward'
-    elif model_prediction < current_price:
-        direction = 'Downward'
-    else:
-        direction = 'Stagnantly'
-
-
-
-
-
-
-
-    return render_template('result.html',price_prediction=model_prediction[0][0], market_direction=direction, symbol=symbol, interval=str_interval)
+        
 
 
 

@@ -26,7 +26,7 @@ A web application that integrates machine learning in order to predict future ma
 
 This project is licensed under the All Rights Reserved License.
 
-You are permitted to access the functionality of the web application freely. However, you may not copy, distribute, modify, or repurpose the code or assets for commercial use, without explicit permission from the author.
+You are permitted to access the functionality of the web application freely. However, you may not copy, distribute, modify, or repurpose the code or assets for commercial use without explicit permission from the author.
 
 See the [License](./Market_app/LICENSE.txt) for further details.
 
