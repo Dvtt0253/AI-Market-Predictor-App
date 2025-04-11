@@ -8,7 +8,7 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.losses import MeanSquaredError 
 import numpy as np
 import csv
-from firewall_lib import flask_firewall
+import flask_firewall
 print(f"Eager execution enabled: {tf.executing_eagerly()}")
 
 

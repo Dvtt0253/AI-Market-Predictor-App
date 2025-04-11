@@ -26,3 +26,4 @@
 2025-04-11 14:34:54,864 - INFO - 127.0.0.1 - - [11/Apr/2025 14:34:54] "[32mPOST /input HTTP/1.1[0m" 302 -
 2025-04-11 14:34:54,870 - INFO - 127.0.0.1 - - [11/Apr/2025 14:34:54] "GET /main HTTP/1.1" 200 -
 2025-04-11 14:34:55,079 - INFO - 127.0.0.1 - - [11/Apr/2025 14:34:55] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-04-11 14:45:03,096 - INFO -  * Detected change in '/Users/sunny/Documents/GitHub/AI-Market-Predictor-App/Market_app/prediction.py', reloading
