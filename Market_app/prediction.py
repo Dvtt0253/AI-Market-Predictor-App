@@ -73,7 +73,7 @@ close_tensor = tf.convert_to_tensor(closing_data.values, dtype=tf.float32)
 tensor_size = close_tensor.shape
 close_tensor = tf.reshape(close_tensor, (tensor_size[0],1))
 price_ds = tf.data.Dataset.from_tensor_slices(close_tensor)
-price_ds = price_ds.batch(batch_size).shuffle(100).prefetch(tf.data.experimental.AUTOTUNE) # declare the batch size and shuffle size
+price_ds = price_ds.batch(batch_size).shuffle(100).prefetch(tf.data.experimental.AUTOTUNE) 
 price_ds = price_ds.map(lambda x:(x,x))
 
 market_model.compile(optimizer='adam', loss= 'mse')
