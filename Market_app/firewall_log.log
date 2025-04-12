@@ -1,29 +1,5 @@
-2025-04-11 14:32:24,178 - INFO - 127.0.0.1 has been whitelisted.
-2025-04-11 14:32:24,179 - INFO - Violations tracker has begun...
-2025-04-11 14:32:24,481 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
-2025-04-11 14:32:48,098 - WARNING -  * Debugger is active!
-2025-04-11 14:32:48,137 - INFO -  * Debugger PIN: 127-192-054
-2025-04-11 14:34:30,785 - INFO - 127.0.0.1 - - [11/Apr/2025 14:34:30] "[32mGET / HTTP/1.1[0m" 302 -
-2025-04-11 14:34:30,821 - INFO - 127.0.0.1 - - [11/Apr/2025 14:34:30] "GET /main HTTP/1.1" 200 -
-2025-04-11 14:34:30,997 - INFO - 127.0.0.1 - - [11/Apr/2025 14:34:30] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2025-04-11 14:34:38,867 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/FRFRF?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=FRFRF&crumb=y.vIVd16Nn%2F
-2025-04-11 14:34:38,872 - ERROR - 
-1 Failed download:
-2025-04-11 14:34:38,872 - ERROR - ['FRFRF']: AttributeError("'NoneType' object has no attribute 'update'")
-2025-04-11 14:34:38,899 - INFO - 127.0.0.1 - - [11/Apr/2025 14:34:38] "[32mPOST /input HTTP/1.1[0m" 302 -
-2025-04-11 14:34:38,906 - INFO - 127.0.0.1 - - [11/Apr/2025 14:34:38] "GET /main HTTP/1.1" 200 -
-2025-04-11 14:34:39,041 - INFO - 127.0.0.1 - - [11/Apr/2025 14:34:39] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2025-04-11 14:34:46,037 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/DFRFR?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=DFRFR&crumb=y.vIVd16Nn%2F
-2025-04-11 14:34:46,044 - ERROR - 
-1 Failed download:
-2025-04-11 14:34:46,044 - ERROR - ['DFRFR']: AttributeError("'NoneType' object has no attribute 'update'")
-2025-04-11 14:34:46,072 - INFO - 127.0.0.1 - - [11/Apr/2025 14:34:46] "[32mPOST /input HTTP/1.1[0m" 302 -
-2025-04-11 14:34:46,118 - INFO - 127.0.0.1 - - [11/Apr/2025 14:34:46] "GET /main HTTP/1.1" 200 -
-2025-04-11 14:34:46,219 - INFO - 127.0.0.1 - - [11/Apr/2025 14:34:46] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2025-04-11 14:34:54,859 - ERROR - 
-1 Failed download:
-2025-04-11 14:34:54,860 - ERROR - ['DEFRFR']: YFPricesMissingError('possibly delisted; no price data found  (period=1y) (Yahoo error = "No data found, symbol may be delisted")')
-2025-04-11 14:34:54,864 - INFO - 127.0.0.1 - - [11/Apr/2025 14:34:54] "[32mPOST /input HTTP/1.1[0m" 302 -
-2025-04-11 14:34:54,870 - INFO - 127.0.0.1 - - [11/Apr/2025 14:34:54] "GET /main HTTP/1.1" 200 -
-2025-04-11 14:34:55,079 - INFO - 127.0.0.1 - - [11/Apr/2025 14:34:55] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2025-04-11 14:45:03,096 - INFO -  * Detected change in '/Users/sunny/Documents/GitHub/AI-Market-Predictor-App/Market_app/prediction.py', reloading
+2025-04-11 14:59:52,430 - INFO - 127.0.0.1 has been whitelisted.
+2025-04-11 14:59:52,430 - INFO - Violations tracker has begun...
+2025-04-11 14:59:52,694 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-11 15:00:04,634 - WARNING -  * Debugger is active!
+2025-04-11 15:00:04,700 - INFO -  * Debugger PIN: 127-192-054
